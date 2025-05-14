@@ -1,0 +1,163 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NickPelis 🍿</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container">
+                <a class="navbar-brand text-white" href="index.html">NickPelis 🍿</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                    <form class="d-flex m-0" role="search" id="formulario-busqueda">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Buscar" aria-label="buscar"
+                                id="busqueda" name="q">
+                            <button class="btn btn-outline-light" type="submit"><i
+                                    class="bi bi-search-heart"></i></button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/backdrops/una-pelicula-de-minecraft.webp" style="view-transition-name: backdrop-una-pelicula-de-minecraft;"
+                        class="d-block w-100 img-cover opacity-25 img-mask-fade" alt="...">
+                    <div class="carousel-caption d-block caption-left-center">
+                        <h1 class="fw-bolder">Una Película de Minecraft</h1>
+                        <p>
+                            <strong>6.8</strong>
+                            1h 41m - 2025
+                        </p>
+                        <p class="d-none d-md-block">
+                            Un portal desconocido atrae a cuatro jóvenes hacia el Supramundo, un reino cúbico y mágico
+                            que toma
+                            forma a partir de la imaginación.
+                        </p>
+                        <a href="detalle.html?slug=una-pelicula-de-minecraft" title="enlace a los detalles de la pelicula"
+                            class="btn btn-outline-light">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/backdrops/the-amateur.webp" style="view-transition-name: backdrop-the-amateur;"
+                        class="d-block w-100 img-cover opacity-25 img-mask-fade" alt="...">
+                    <div class="carousel-caption d-block caption-left-center">
+                        <h1 class="fw-bolder">El Amateur</h1>
+                        <p>
+                            <strong>6.7</strong>
+                            2h 05m - 2025
+                        </p>
+                        <p class="d-none d-md-block">
+                            Charlie Heller es un brillante decodificador de la CIA cuyo mundo se derrumba cuando su
+                            esposa muere en un atentado terrorista en Londres.
+                        </p>
+                        <a href="detalle.html?slug=the-amateur" title="enlace a los detalles de la pelicula"
+                            class="btn btn-outline-light">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/backdrops/los-pecadores.webp" style="view-transition-name: backdrop-los-pecadores;"
+                        class="d-block w-100 img-cover opacity-25 img-mask-fade" alt="...">
+                    <div class="carousel-caption d-block caption-left-center">
+                        <h1 class="fw-bolder">Los Pecadores</h1>
+                        <p>
+                            <strong>8.2</strong>
+                            2h 17m - 2025
+                        </p>
+                        <p class="d-none d-md-block">
+                            En un intento de dejar atrás sus problemáticas vidas, unos hermanos gemelos regresan a su
+                            ciudad natal de Mississippi para comenzar de nuevo.
+                        </p>
+                        <a href="detalle.html?slug=los-pecadores" title="enlace a los detalles de la pelicula"
+                            class="btn btn-outline-light">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <section class="container peliculas-container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="m-0">Todas las películas</h2>
+                <div class="m-0 d-flex gap-2">
+                    <div>
+                        <label for="genero">Género</label>
+                        <select class="form-select form-select-sm" id="genero" name="genero">
+                            <option value="">Todos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="anio">Año</label>
+                        <select id="anio" name="anio" class="form-select form-select-sm">
+                            <option value="">Todos</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="peliculas" id="peliculas-container">
+            </div>
+        </section>
+        <template id="plantilla-pelicula">
+            <article>
+                <a href="#" class="text-decoration-none text-reset">
+                    <div class="position-relative mb-2">
+                        <img src="" alt="" class="w-100"/>
+                        <span class=" año position-absolute bottom-0 end-0 translate-middle badge rounded-pill text-bg-primary"></span>
+                    </div>
+                    <h5> </h5>
+                    <p>
+                        <strong>Generos: </strong><span class="generos"></span>
+                    </p>
+                </a>
+            </article>
+        </template>
+    </main>
+    <footer class="container py-4">
+        <p class="text-center">&copy; 2025 NickPelis - Lina Salazar</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="data/peliculas.js"></script>
+    <script src="js/renderPeliculas.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+body {
+    background-color: #080f28;
+    color: #8da0bc;
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+.img-cover {
+    max-height: 550px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.caption-left-center {
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.img-mask-fade {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.peliculas-container {
+    transition: max-width 0.3s ease, padding 0.3s ease;
+}
+
+.peliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(150px,
+                1fr));
+    justify-content: center;
+    gap: 16px;
+}
+
+.peliculas article {
+    max-width: 250px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.peliculas article:hover {
+    transform: scale(1.05);
+}
+
+.pelicula-detalle {
+    padding: 7rem 0;
+    color: white;
+}
